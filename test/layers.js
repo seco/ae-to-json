@@ -3,9 +3,7 @@ var EXPECTED_NAMES = {
     "jam3Logo.png"
   ],
   "Test-Comp-Blank": [],
-  "Test-Comp-Animated": [
-    "animatedLogo 2", "animatedLogo", "staticLogo"
-  ]
+  "Test-Comp-Animated": [ 'animatedLogo 2', 'animatedLogo', 'animatedLogoBezier', 'staticLogo' ]
 };
 
 module.exports = function(t) {

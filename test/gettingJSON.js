@@ -16,6 +16,7 @@ module.exports = function(t) {
     t.equal(typeof json, 'object', 'received an object from');
 
     global.jsonFromAE = json;
+    // console.log(JSON.stringify(json, null, '  '));
     
     t.end();
   })

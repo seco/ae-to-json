@@ -13,6 +13,12 @@ module.exports = function() {
     rotation: 'rotationZ'
   };
 
+  const EASE_TYPE = {
+    BEZIER: 'bezier',
+    LINEAR: 'linear',
+    HOLD: 'hold'
+  };
+
   return {
     compositions: getCompositions()
   };
@@ -86,7 +92,7 @@ module.exports = function() {
 
       for(var i = 1; i <= prop.numKeys; i++) {
         rVal.push(
-          [ prop.keyTime( i ), prop.keyValue( i ) ]
+          [ prop.keyTime(i), prop.keyValue(i), getKeysForKeyFrame(prop, i) ]
         );
       }
     // we do not have keyframes just add the first
@@ -98,5 +104,90 @@ module.exports = function() {
     }
 
     return rVal;
+  }
+
+  // get the key ease info for the key frame
+  function getKeysForKeyFrame(prop, idxKeyFrame) {
+    var rVal = {
+      in: {
+        type: getEaseType(prop.keyInInterpolationType(idxKeyFrame)),
+        temporalEase: getTemporalEaseIn(prop, idxKeyFrame)
+      }, 
+
+      out: {
+        type: getEaseType(prop.keyOutInterpolationType(idxKeyFrame)),
+        temporalEase: getTemporalEaseOut(prop, idxKeyFrame)
+      }
+    };
+
+    if(prop.isSpatial) {
+      rVal.in.spatialTangent = getSpatialTangentIn(prop, idxKeyFrame);
+      rVal.out.spatialTangent = getSpatialTangentOut(prop, idxKeyFrame);
+    }
+
+    return rVal;
+  }
+
+  // get ease type
+  function getEaseType(type){
+    switch(type) {
+      case KeyframeInterpolationType.BEZIER:
+        return EASE_TYPE.BEZIER;
+      break;
+
+      case KeyframeInterpolationType.LINEAR:
+        return EASE_TYPE.LINEAR;
+      break;
+
+      case KeyframeInterpolationType.HOLD:
+        return EASE_TYPE.HOLD;
+      break;
+
+      default:
+        throw new Error('unknown ease type');
+      break;
+    }
+  }
+
+  // gets temporal ease in
+  function getTemporalEaseIn(prop, idxKeyFrame) {
+    return getTemporalEase('keyInTemporalEase', prop, idxKeyFrame);
+  }
+
+  // gets temporal ease out
+  function getTemporalEaseOut(prop, idxKeyFrame) {
+    return getTemporalEase('keyOutTemporalEase', prop, idxKeyFrame);
+  }
+
+  function getTemporalEase(func, prop, idxKeyFrame) {
+    var type = prop.propertyValueType;
+    var rVal = prop[ func ](idxKeyFrame)
+    .map(function(easeInfo) {
+      return {
+        speed: easeInfo.speed,
+        influence: easeInfo.influence
+      };
+    });
+
+    return rVal;
+  }
+
+
+  // get in spatial tangent
+  function getSpatialTangentIn(prop, idxKeyFrame) {
+    return getSpatialTangent('keyInSpatialTangent', prop, idxKeyFrame);
+  }
+
+  // get out spatial tangent
+  function getSpatialTangentOut(prop, idxKeyFrame) {
+    return getSpatialTangent('keyOutSpatialTangent', prop, idxKeyFrame);
+  }
+
+  function getSpatialTangent(func, prop, idxKeyFrame) {
+    if(prop.isSpatial) {
+      return prop[ func ](idxKeyFrame);
+    } else {
+      throw new Error('this function should not be called if prop.isSpatial is false');
+    }
   }
 };
