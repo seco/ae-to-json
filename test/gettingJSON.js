@@ -1,5 +1,7 @@
 var ae = require('after-effects');
 var aeJSON = require('./..');
+var fs = require('fs');
+var path = require('path');
 
 ae.options({
   errorHandling: true,

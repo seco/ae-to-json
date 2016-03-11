@@ -4,8 +4,14 @@ module.exports = function() {
     'position',
     'scale',
     'opacity',
+    'rotationX',
+    'rotationY',
     'rotation'
   ];
+
+  const PROP_RENAMES = {
+    rotation: 'rotationZ'
+  };
 
   return {
     compositions: getCompositions()
@@ -61,7 +67,9 @@ module.exports = function() {
   function getProperties(layer) {
     return PROPS
     .reduce(function(properties, property) {
-      properties[ property ] = getKeyFramesForProp(
+      var propOutName = PROP_RENAMES[ property ] || property;
+
+      properties[ propOutName ] = getKeyFramesForProp(
         layer.property(property)
       );
 

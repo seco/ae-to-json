@@ -4,8 +4,7 @@ var EXPECTED_NAMES = {
   ],
   "Test-Comp-Blank": [],
   "Test-Comp-Animated": [
-    "animatedLogo",
-    "staticLogo"
+    "animatedLogo 2", "animatedLogo", "staticLogo"
   ]
 };
 

@@ -39,7 +39,17 @@ will export an After Effects project as a JSON object
               [ time, opacity ],
               ...more opacity frames
             ],
-            rotation: [
+            rotationX: [
+              [ time, rotation ],
+              [ time, rotation ],
+              ...more rotation frames
+            ],
+            rotationY: [
+              [ time, rotation ],
+              [ time, rotation ],
+              ...more rotation frames
+            ],
+            rotationZ: [
               [ time, rotation ],
               [ time, rotation ],
               ...more rotation frames
@@ -56,6 +66,7 @@ will export an After Effects project as a JSON object
 ## Testing
 
 To run tests:
+
 1. Open `test/testProject.aep`
 2. `$ npm test`
 
