@@ -9,6 +9,9 @@ The purpose of this module is to have one After Effects JSX (After Effects JS) s
 - Create a platform on which renderers can be built on top of
 - Have proper unit tests to catch breaking changes in After Effects (one failure point vs many failure points)
 
+Documentation on Adobe's After Effects scripting guide can be found here:
+- [After Effects Scripting Guide](http://download.macromedia.com/pub/developer/aftereffects/scripting/After-Effects-CS6-Scripting-Guide.pdf) _(appendix of API documentation starts on Page #12)_
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/ae-to-json.png)](https://www.npmjs.com/package/ae-to-json)
