@@ -103,7 +103,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -117,7 +117,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -141,7 +141,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -155,7 +155,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -179,7 +179,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -193,7 +193,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -225,7 +225,7 @@ function getExpected() {
           0,
           100,
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -234,7 +234,7 @@ function getExpected() {
                 }
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -249,7 +249,7 @@ function getExpected() {
           96.5298631965299,
           0,
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -258,7 +258,7 @@ function getExpected() {
                 }
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -309,7 +309,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -323,7 +323,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -347,7 +347,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -361,7 +361,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -489,7 +489,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -503,7 +503,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -527,7 +527,7 @@ function getExpected() {
             -954.177061094476
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "bezier",
               "temporalEase": [
                 {
@@ -541,7 +541,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "bezier",
               "temporalEase": [
                 {
@@ -565,7 +565,7 @@ function getExpected() {
             222.754193566184
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "bezier",
               "temporalEase": [
                 {
@@ -579,7 +579,7 @@ function getExpected() {
                 -128.089492797852
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "bezier",
               "temporalEase": [
                 {
@@ -603,7 +603,7 @@ function getExpected() {
             0
           ],
           {
-            "in": {
+            "easeIn": {
               "type": "linear",
               "temporalEase": [
                 {
@@ -617,7 +617,7 @@ function getExpected() {
                 0
               ]
             },
-            "out": {
+            "easeOut": {
               "type": "linear",
               "temporalEase": [
                 {
