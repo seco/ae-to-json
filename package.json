@@ -19,10 +19,11 @@
   },
   "scripts": {
     "test": "node test/",
-    "jsx": "rm bundle.jsx; npm run copy-shim && npm run copy-get && npm run js-jsx",
+    "prePublish": "npm run build-jsx",
+    "build-jsx": "rm bundle.jsx; npm run copy-shim && npm run copy-get && npm run js-jsx",
     "copy-shim": "cat node_modules/after-effects/lib/includes/es5-shim.jsx >> bundle.jsx",
     "copy-get": "cat node_modules/after-effects/lib/includes/get.jsx >> bundle.jsx",
-    "js-jsx": "babel index.js >> bundle.jsx"
+    "js-jsx": "browserify index.jsx >> bundle.jsx; babel bundle.jsx >> bundle.jsx"
   },
   "keywords": [
     "after,effects,json,jsx"

@@ -92,7 +92,7 @@ module.exports = function() {
 
       for(var i = 1; i <= prop.numKeys; i++) {
         rVal.push(
-          [ prop.keyTime(i), prop.keyValue(i), getKeysForKeyFrame(prop, i) ]
+          [ prop.keyTime(i), prop.keyValue(i), getEaseForKeyFrame(prop, i) ]
         );
       }
     // we do not have keyframes just add the first
@@ -107,22 +107,22 @@ module.exports = function() {
   }
 
   // get the key ease info for the key frame
-  function getKeysForKeyFrame(prop, idxKeyFrame) {
+  function getEaseForKeyFrame(prop, idxKeyFrame) {
     var rVal = {
-      in: {
+      easeIn: {
         type: getEaseType(prop.keyInInterpolationType(idxKeyFrame)),
         temporalEase: getTemporalEaseIn(prop, idxKeyFrame)
       }, 
 
-      out: {
+      easeOut: {
         type: getEaseType(prop.keyOutInterpolationType(idxKeyFrame)),
         temporalEase: getTemporalEaseOut(prop, idxKeyFrame)
       }
     };
 
     if(prop.isSpatial) {
-      rVal.in.spatialTangent = getSpatialTangentIn(prop, idxKeyFrame);
-      rVal.out.spatialTangent = getSpatialTangentOut(prop, idxKeyFrame);
+      rVal.easeIn.spatialTangent = getSpatialTangentIn(prop, idxKeyFrame);
+      rVal.easeOut.spatialTangent = getSpatialTangentOut(prop, idxKeyFrame);
     }
 
     return rVal;
