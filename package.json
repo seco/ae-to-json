@@ -9,7 +9,9 @@
     "email": "me@mikkoh.com",
     "url": "https://github.com/jam3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "JSON2": "^0.1.0"
+  },
   "devDependencies": {
     "after-effects": "^0.3.2",
     "babel-cli": "^6.6.5",
