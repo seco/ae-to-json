@@ -19,8 +19,12 @@
     "tape": "^4.5.1"
   },
   "scripts": {
-    "test": "npm run transpile; npm run browserify-test; npm run clean-transpile; babel-node test/",
-    "browserify-test": "browserify index.js -s aeToJSON -o test/aeToJSON.js",
+    "test": "npm run build-test; babel-node test/",
+    "build-test": "npm run transpile; npm run test-template; npm run clean-transpile;",
+    "test-template": "npm run test-cat-header; npm run test-browserify; npm run test-cat-footer",
+    "test-cat-header": "cat test/testTemplate/header.js > test/aeToJSON.js",
+    "test-browserify": "browserify index.js -s aeToJSON >> test/aeToJSON.js",
+    "test-cat-footer": "cat test/testTemplate/footer.js >> test/aeToJSON.js",
     "prepublish": "npm run compile",
     "postpublish": "npm run clean-transpile",
     "compile": "npm run transpile && npm run browserify-jsx",

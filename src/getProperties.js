@@ -20,7 +20,7 @@ module.exports = function getProperties(layer) {
   .reduce(function(properties, property) {
     var propOutName = PROP_RENAMES[ property ] || property;
 
-    properties[ propOutName ] = getKeyFramesForProp(
+    properties[ propOutName ] = getKeyframesForProp(
       layer.property(property)
     );
 

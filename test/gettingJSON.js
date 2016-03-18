@@ -1,5 +1,7 @@
 var ae = require('after-effects');
 
+var aeToJSON = require('./aeToJSON');
+
 ae.options({
   errorHandling: true,
   es5Shim: true,
@@ -7,9 +9,9 @@ ae.options({
 });
 
 module.exports = function(t) {
-  ae.execute(__dirname + '/aeToJSON.js')
+  ae.execute(aeToJSON)
   .then((json) => {
-    console.log(json);
+    // console.log(json);
 
     t.ok(json, 'received json');
     t.equal(typeof json, 'object', 'received an object from');
