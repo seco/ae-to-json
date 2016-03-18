@@ -1,10 +1,10 @@
 /* Shims */
-require('./lib/shims/json');
+require('./shims/json');
 
 /* This will create the global for jsx */
-aeToJSON = require('./.');
+global.aeToJSON = require('./index.js');
 
-aeToJSONFile = function(prompt) {
+global.aeToJSONFile = function(prompt) {
   prompt = prompt || '';
 
   var f = File.saveDialog(prompt);

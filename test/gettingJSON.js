@@ -1,7 +1,4 @@
 var ae = require('after-effects');
-var aeJSON = require('./..');
-var fs = require('fs');
-var path = require('path');
 
 ae.options({
   errorHandling: true,
@@ -10,8 +7,10 @@ ae.options({
 });
 
 module.exports = function(t) {
-  ae.execute(aeJSON)
+  ae.execute(__dirname + '/aeToJSON.js')
   .then((json) => {
+    console.log(json);
+
     t.ok(json, 'received json');
     t.equal(typeof json, 'object', 'received an object from');
 
@@ -21,6 +20,8 @@ module.exports = function(t) {
     t.end();
   })
   .catch(function(err) {
+    console.log(err);
+
     throw err;
   });
 };
