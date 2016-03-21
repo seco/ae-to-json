@@ -1,4 +1,5 @@
 var ae = require('after-effects');
+var fs = require('fs');
 
 var aeToJSON = require('./aeToJSON');
 
@@ -14,8 +15,14 @@ module.exports = function(t) {
     t.ok(json, 'received json');
     t.equal(typeof json, 'object', 'received an object from');
 
+    if(json) {
+      fs.writeFileSync(
+        'testOutPut.json',
+        JSON.stringify(json, null, '  ')
+      );
+    }
+
     global.jsonFromAE = json;
-    console.log(JSON.stringify(json, null, '  '));
     
     t.end();
   })

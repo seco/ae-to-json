@@ -1,6 +1,8 @@
-var getProperties = require('./getProperties');
 var merge = require('xtend');
+
+var getProperties = require('./getProperties');
 var getNonObjectValues = require('./util/getNonObjectValues');
+var getBlendingMode = require('./getBlendingMode');
 
 module.exports = function getLayer(layer, parentLayers) {
   var baseValues = getNonObjectValues(layer);
@@ -15,7 +17,8 @@ module.exports = function getLayer(layer, parentLayers) {
     {
       parent: parent,
       properties: getProperties(layer),
-      nullLayer: Boolean(baseValues.nullLayer) // this is here to normalize cause sometimes it might be undefined or false
+      nullLayer: Boolean(baseValues.nullLayer), // this is here to normalize cause sometimes it might be undefined or false
+      blendingMode: getBlendingMode(baseValues.blendingMode)
     }
   );
 };
