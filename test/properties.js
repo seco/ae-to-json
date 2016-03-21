@@ -10,12 +10,17 @@ module.exports = function(t) {
     layers.forEach(function(layer, i) {
       var key = comp.name + '_' + layer.name + '_' + i;
 
-      for(var propName in layer.properties) {
-        t.deepEqual(
-          layer.properties[ propName ], 
-          EXPECTED[ key ][ propName ], 
-          comp.name + ' layer ' + layer.name + '_' + i + ' ' + propName + ' had the same value'
-        );
+      if(EXPECTED[ key ]) {
+        for(var propName in layer.properties) {
+
+          if(EXPECTED[ key ][ propName ]) {
+            t.deepEqual(
+              layer.properties[ propName ], 
+              EXPECTED[ key ][ propName ], 
+              comp.name + ' layer ' + layer.name + '_' + i + ' ' + propName + ' had the same value'
+            );
+          }
+        }
       }
     });
   });
