@@ -32,7 +32,7 @@ module.exports = function(t) {
 
 function getExpected() {
   return {
-    "Test-Comp-Static_jam3Logo.png_0": {
+    "Test-Comp-Static_static-logo": {
       "anchorPoint": [
         [
           0,

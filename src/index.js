@@ -1,3 +1,5 @@
+// require('ae-shim');
+
 module.exports = function() {
   const getCompositions = require('./getCompositions');
   
