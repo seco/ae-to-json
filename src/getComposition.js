@@ -1,12 +1,15 @@
 const getLayer = require('./getLayer');
 var collectionToArray = require('./util/collectionToArray');
+var getNonObjectValues = require('./util/getNonObjectValues');
+var merge = require('xtend');
 
 module.exports = function getComposition(comp) {
-  var rVal = {
-    name: comp.name,
-    duration: comp.duration,
-    layers: []
-  };
+  var rVal = merge(
+    getNonObjectValues(comp),
+    {
+      layers: []
+    }
+  );
 
   var outLayers = rVal.layers;
   var layers = collectionToArray(comp.layers);
