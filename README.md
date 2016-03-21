@@ -27,41 +27,55 @@ Documentation on Adobe's After Effects scripting guide can be found here:
         {
           name: 'nameOfLayer',
           properties: {
-            anchorPoint: [
-              [ time, [ x, y, z ], easeInfo],
-              [ time, [ x, y, z ], easeInfo],
-              ...anchorPoint frames
-            ],
-            position: [
-              [ time, [ x, y, z ], easeInfo],
-              [ time, [ x, y, z ], easeInfo],
-              ...position frames
-            ],
-            scale: [
-              [ time, [ scaleX, scaleY, scaleZ ], easeInfo],
-              [ time, [ scaleX, scaleY, scaleZ ], easeInfo],
-              ...more scale frames
-            ],
-            opacity: [
-              [ time, opacity, easeInfo],
-              [ time, opacity, easeInfo],
-              ...more opacity frames
-            ],
-            rotationX: [
-              [ time, rotation, easeInfo],
-              [ time, rotation, easeInfo],
-              ...more rotation frames
-            ],
-            rotationY: [
-              [ time, rotation, easeInfo],
-              [ time, rotation, easeInfo],
-              ...more rotation frames
-            ],
-            rotationZ: [
-              [ time, rotation, easeInfo],
-              [ time, rotation, easeInfo],
-              ...more rotation frames
-            ]
+            anchorPoint: {
+              keyframes: [
+                [ time, [ x, y, z ], easeInfo],
+                [ time, [ x, y, z ], easeInfo],
+                ...anchorPoint frames
+              ]
+            },
+            position: {
+              keyframes: [
+                [ time, [ x, y, z ], easeInfo],
+                [ time, [ x, y, z ], easeInfo],
+                ...position frames
+              ]
+            },
+            scale: {
+              keyframes: [
+                [ time, [ scaleX, scaleY, scaleZ ], easeInfo],
+                [ time, [ scaleX, scaleY, scaleZ ], easeInfo],
+                ...more scale frames
+              ]
+            },
+            opacity: {
+              keyframes: [
+                [ time, opacity, easeInfo],
+                [ time, opacity, easeInfo],
+                ...more opacity frames
+              ]
+            },
+            rotationX: {
+              keyframes: [
+                [ time, rotation, easeInfo],
+                [ time, rotation, easeInfo],
+                ...more rotation frames
+              ]
+            },
+            rotationY: {
+              keyframes: [
+                [ time, rotation, easeInfo],
+                [ time, rotation, easeInfo],
+                ...more rotation frames
+              ]
+            },
+            rotationZ: {
+              keyframes: [
+                [ time, rotation, easeInfo],
+                [ time, rotation, easeInfo],
+                ...more rotation frames
+             
+            }]
           }
         }
         ...more layers

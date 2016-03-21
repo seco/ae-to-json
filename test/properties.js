@@ -1,4 +1,4 @@
-var EXPECTED = getExpected();
+var EXPECTED_KEY_FRAMES = getExpected();
 
 module.exports = function(t) {
   var json = global.jsonFromAE;
@@ -10,13 +10,13 @@ module.exports = function(t) {
     layers.forEach(function(layer, i) {
       var key = comp.name + '_' + layer.name + '_' + i;
 
-      if(EXPECTED[ key ]) {
+      if(EXPECTED_KEY_FRAMES[ key ]) {
         for(var propName in layer.properties) {
 
-          if(EXPECTED[ key ][ propName ]) {
+          if(EXPECTED_KEY_FRAMES[ key ][ propName ]) {
             t.deepEqual(
-              layer.properties[ propName ], 
-              EXPECTED[ key ][ propName ], 
+              layer.properties[ propName ].keyframes, 
+              EXPECTED_KEY_FRAMES[ key ][ propName ], 
               comp.name + ' layer ' + layer.name + '_' + i + ' ' + propName + ' had the same value'
             );
           }
