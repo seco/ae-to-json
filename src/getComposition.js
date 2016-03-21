@@ -1,4 +1,5 @@
 const getLayer = require('./getLayer');
+var collectionToArray = require('./util/collectionToArray');
 
 module.exports = function getComposition(comp) {
   var rVal = {
@@ -8,10 +9,10 @@ module.exports = function getComposition(comp) {
   };
 
   var outLayers = rVal.layers;
-  var layers = get(AVLayer, comp.layers);
+  var layers = collectionToArray(comp.layers);
 
   // now loop through all layers to get keyframes
-  layers.each(function(layer) {
+  layers.forEach(function(layer, layers) {
 
     // save out the layer
     outLayers.push(

@@ -74,11 +74,13 @@ Documentation on Adobe's After Effects scripting guide can be found here:
 
 ## Testing
 
-To run tests:
+To run tests there are two scenarios. Run a test just once or watch the `src/`and `test/` folders and run tests. Below are the commands to run tests:
 
-1. Open `test/testProject.aep`
-2. `$ npm test`
+To run test once:
+`$ npm test`
 
+To watch and run (better for development):
+`$ npm start`
 
 ## License
 
