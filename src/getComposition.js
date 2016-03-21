@@ -12,11 +12,11 @@ module.exports = function getComposition(comp) {
   var layers = collectionToArray(comp.layers);
 
   // now loop through all layers to get keyframes
-  layers.forEach(function(layer, layers) {
+  layers.forEach(function(layer) {
 
     // save out the layer
     outLayers.push(
-      getLayer(layer)
+      getLayer(layer, layers)
     );
   });
 

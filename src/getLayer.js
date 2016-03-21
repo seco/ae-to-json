@@ -4,11 +4,9 @@ module.exports = function getLayer(layer, parentLayers) {
   
   var parent = layer.parent;
 
-  // if(parent) {
-  //   parent = parentLayers.indexOf(parent);
-  // }
-
-  // console.log('parent', parent);
+  if(parent) {
+    parent = parentLayers.indexOf(parent);
+  }
 
   return {
     name: layer.name,
