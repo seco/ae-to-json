@@ -7,7 +7,7 @@ var EXPECTED_NAMES = {
 var TESTS_FOR_LAYER = {
   "iAmANull": function(t, comp, layer) {
     // check if null layer is true
-    t.equal(layer.isNullLayer, true, 'isNullLayer' + comp.name + ' layer ' + layer.name);
+    t.equal(layer.nullLayer, true, 'nullLayer' + comp.name + ' layer ' + layer.name);
   },
 
   "static-logo": function(t, comp, layer) {
@@ -37,7 +37,7 @@ module.exports = function(t) {
 
       t.ok(layer.name, 'composition ' + comp.name + ' layer ' + i + ' has a name');
       t.ok(layer.properties, 'composition ' + comp.name + ' layer ' + layer.name + ' has properties');
-      t.ok(layer.isNullLayer !== undefined, 'composition ' + comp.name + ' layer ' + layer.name + ' has isNullLayer');
+      t.ok(layer.nullLayer !== undefined, 'composition ' + comp.name + ' layer ' + layer.name + ' has nullLayer');
 
       // run tests for specific layers
       if(TESTS_FOR_LAYER[ layer.name ]) {
@@ -46,7 +46,7 @@ module.exports = function(t) {
       // run test for every other layer
       } else {
 
-        t.equal(layer.isNullLayer, false, 'isNullLayer value was correct for ' + comp.name + ' layer ' + layer.name);
+        t.equal(layer.nullLayer, false, 'nullLayer value was correct for ' + comp.name + ' layer ' + layer.name);
         t.equal(layer.parent, null, 'parent was set to null for ' + comp.name + ' layer ' + layer.name);
       }
 

@@ -1,5 +1,5 @@
-const getComposition = require('./getComposition');
-const collectionToArray = require('./util/collectionToArray');
+var getComposition = require('./getComposition');
+var collectionToArray = require('./util/collectionToArray');
 
 module.exports = function getCompositions() {
   var rVal = [];

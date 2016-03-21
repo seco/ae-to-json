@@ -4,26 +4,34 @@ module.exports = function(item) {
 
   for(var i in item) {
 
-    if(item[ i ]) {
-      // for some reason typeof was failing in ae so using this
-      // method instead
-      type = getTypeOf(item[ i ]);
+    // for some properties even if you try to access
+    // them an error will be thrown for instance an error like
+    // [Error: After Effects error: Unable to access lightType because layer is not a LightLayer.]
+    // coulr be thrown
+    try {
+      if(item[ i ]) {
+        // for some reason typeof was failing in ae so using this
+        // method instead
+        type = getTypeOf(item[ i ]);
 
-      if(type === Object) {
-        rVal[ i ] = item[ i ];
-      } else if(type === Array) {
-        type = getTypeOf(item[ i ][ 0 ]);
+        if(type === Object) {
+          rVal[ i ] = item[ i ];
+        } else if(type === Array) {
+          type = getTypeOf(item[ i ][ 0 ]);
 
-        // null is number or string or boolean
-        if(type === null) {
-          rVal[ i ] = item[ i ].slice();
+          // null is number or string or boolean
+          if(type === null) {
+            rVal[ i ] = item[ i ].slice();
+          }
+        // the type is a number string or boolean
+        } else if(type === null) {
+          rVal[ i ] = item[ i ];
         }
-      // the type is a number string or boolean
-      } else if(type === null) {
+      } else if(item[ i ] === null) {
         rVal[ i ] = item[ i ];
       }
-    } else if(item[ i ] === null) {
-      rVal[ i ] = item[ i ];
+    } catch(e) {
+
     }
   }
 

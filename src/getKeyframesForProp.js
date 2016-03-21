@@ -1,4 +1,4 @@
-const getEaseForKeyFrame = require('./getEaseForKeyFrame');
+var getEaseForKeyFrame = require('./getEaseForKeyFrame');
 
 // this function will export keyframes for a property
 module.exports = function getKeyFramesForProp(prop) {

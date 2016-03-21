@@ -1,4 +1,4 @@
-const getKeyframesForProp = require('./getKeyframesForProp');
+var getKeyframesForProp = require('./getKeyframesForProp');
 
 const PROPS = [
   'anchorPoint', 

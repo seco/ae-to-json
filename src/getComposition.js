@@ -1,4 +1,4 @@
-const getLayer = require('./getLayer');
+var getLayer = require('./getLayer');
 var collectionToArray = require('./util/collectionToArray');
 var getNonObjectValues = require('./util/getNonObjectValues');
 var merge = require('xtend');
