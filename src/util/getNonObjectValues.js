@@ -14,9 +14,7 @@ module.exports = function(item) {
         // method instead
         type = getTypeOf(item[ i ]);
 
-        if(type === Object) {
-          rVal[ i ] = item[ i ];
-        } else if(type === Array) {
+        if(type === Array) {
           type = getTypeOf(item[ i ][ 0 ]);
 
           // null is number or string or boolean
@@ -24,9 +22,9 @@ module.exports = function(item) {
             rVal[ i ] = item[ i ].slice();
           }
         // the type is a number string or boolean
-        } else if(type === null) {
+        } else if(type !== Object && type !== Function) {
           rVal[ i ] = item[ i ];
-        }
+        } 
       } else if(item[ i ] === null) {
         rVal[ i ] = item[ i ];
       }

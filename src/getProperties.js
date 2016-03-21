@@ -1,5 +1,8 @@
-var getKeyframesForProp = require('./getKeyframesForProp');
 var merge = require('xtend');
+
+var getKeyframesForProp = require('./getKeyframesForProp');
+var getPropertyType = require('./getPropertyType');
+var getPropertyValueType = require('./getPropertyValueType');
 var getNonObjectValues = require('./util/getNonObjectValues');
 
 const PROPS = [
@@ -27,9 +30,9 @@ module.exports = function getProperties(layer) {
     properties[ propOutName ] = merge(
       baseValues,
       {
-        keyframes: getKeyframesForProp(
-          aeProperty
-        )
+        keyframes: getKeyframesForProp(aeProperty),
+        propertyType: getPropertyType(baseValues.propertyType),
+        propertyValueType: getPropertyValueType(baseValues.propertyValueType)
       }
     );
 
