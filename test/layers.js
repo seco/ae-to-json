@@ -17,7 +17,9 @@ var TESTS_FOR_LAYER = {
 
 module.exports = function(t) {
   var json = global.jsonFromAE;
-  var compositions = json.compositions;
+  var compositions = json.project.items.filter(function(item) {
+    return item.typeName === 'Composition';
+  });
 
   compositions
   .forEach(function(comp) {

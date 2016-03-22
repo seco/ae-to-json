@@ -1,6 +1,8 @@
 module.exports = function(t) {
   var json = global.jsonFromAE;
-  var compositions = json.compositions;
+  var compositions = json.project.items.filter(function(item) {
+    return item.typeName === 'Composition';
+  });
 
   t.ok(compositions, 'we have compositions');
   t.deepEqual(compositions.map(getCompNames), [ 'Test-Comp-Static', 'Test-Comp-Blank', 'Test-Comp-Animated' ], 'Received compositions');
