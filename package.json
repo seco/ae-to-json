@@ -26,15 +26,16 @@
     "start": "npm run watch",
     "watch": "npm run open-ae; nodemon -w src/ -w test/ -i test/aeToJSON.js -x npm -- run test-build-run",
     "test": "npm run open-ae; npm run test-build-run;",
-    "test-build-run": "npm run build-test; babel-node test/",
-    "open-ae": "opn test/ae/testProject.aepx",
-    "build-test": "npm run transpile; npm run test-template; npm run transpile-clean;",
+    "test-build-run": "npm run test-build; babel-node test/",
+    "test-build": "npm run transpile; npm run test-template; npm run transpile-clean;",
     "test-template": "npm run test-cat-header; npm run test-browserify; npm run test-cat-footer",
     "test-cat-header": "cat test/testTemplate/header.js > test/aeToJSON.js",
     "test-browserify": "browserify index.js -s aeToJSON >> test/aeToJSON.js",
     "test-cat-footer": "cat test/testTemplate/footer.js >> test/aeToJSON.js",
     "transpile": "babel -d ./ src/",
-    "transpile-clean": "rm *.js *.jsx; rm -rf util/"
+    "transpile-clean": "rm *.js *.jsx; rm -rf util/",
+    "export-example": "npm run open-ae; npm run test-build; babel-node example/exportExample.js",
+    "open-ae": "opn test/ae/testProject.aepx"
   },
   "keywords": [
     "after,effects,json,jsx"
