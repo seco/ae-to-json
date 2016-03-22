@@ -18,71 +18,74 @@ Documentation on Adobe's After Effects scripting guide can be found here:
 
 ## High Level Exported Format
 
+Here's an example on an high level what will be exported from After Effects. These files can be very large since we attempt to export everything but at least this small bit of documentation will help you get started traversing the exports:
 ```javascript
-{
-  compositions: [
-    { 
-      name: 'nameOfComp',
-      layers: [
-        {
-          name: 'nameOfLayer',
-          properties: {
-            anchorPoint: {
-              keyframes: [
-                [ time, [ x, y, z ], easeInfo],
-                [ time, [ x, y, z ], easeInfo],
-                ...anchorPoint frames
-              ]
-            },
-            position: {
-              keyframes: [
-                [ time, [ x, y, z ], easeInfo],
-                [ time, [ x, y, z ], easeInfo],
-                ...position frames
-              ]
-            },
-            scale: {
-              keyframes: [
-                [ time, [ scaleX, scaleY, scaleZ ], easeInfo],
-                [ time, [ scaleX, scaleY, scaleZ ], easeInfo],
-                ...more scale frames
-              ]
-            },
-            opacity: {
-              keyframes: [
-                [ time, opacity, easeInfo],
-                [ time, opacity, easeInfo],
-                ...more opacity frames
-              ]
-            },
-            rotationX: {
-              keyframes: [
-                [ time, rotation, easeInfo],
-                [ time, rotation, easeInfo],
-                ...more rotation frames
-              ]
-            },
-            rotationY: {
-              keyframes: [
-                [ time, rotation, easeInfo],
-                [ time, rotation, easeInfo],
-                ...more rotation frames
-              ]
-            },
-            rotationZ: {
-              keyframes: [
-                [ time, rotation, easeInfo],
-                [ time, rotation, easeInfo],
-                ...more rotation frames
-             
-            }]
+{ 
+  // meta data for the project
+  project: {
+
+    // items which are used in the Project panel
+    // this includes: 
+    //  Compositions, 
+    //  Footage (images, videos, solids, etc.),
+    //  Solids,
+    //  etc.
+    items: [
+      // Composition Type
+      {
+        typeName: 'Composition',
+        // these are the Compositions layers
+        layers: [
+          {
+            // this includes all properties for this layer
+            // properties are things like:
+            //  Transform, (position, scale, rotation, anchor, etc.)
+            //  Material Options,
+            //  Effects,
+            //  etc.
+            properties: {
+
+              // this is what the transform property would look like
+              Transform: {
+
+                // Transform's have their own properties
+                // This is what X Position on a high level would look like
+                "X Position": {
+
+                  // if a property is animatable it will contain keyframes
+                  // keyframes will be a two dimension array where each element
+                  // on the second dimension is a key frame
+                  "keyframes": [
+                    // each key frame has a time (in seconds) which is at [0]
+                    // a value which is at [1] (values can be scalar values 
+                    // or arrays represented by arrays)
+                    // 
+                    // And an optional ease value. Generally you'd need more
+                    // than one keyframe to have ease values.
+                    // 
+                    // It should be noted if no keyframes were added in After 
+                    // Effects for ease of use one keyframe will be output with
+                    // the value at time 0
+                    [ time, value, ease ]
+                  ]
+                }
+              }
+            }
           }
-        }
-        ...more layers
-      ]
-    }
-    ...more compositions
-  ]
+        ]
+      },
+      {
+        typeName: 'Footage'
+      },
+      {
+        typeName: 'Folder',
+        items: [
+          // this items folder would contain
+          // Compositions, Footage, Solids, etc.
+        ]
+      }
+    ]
+  }
 }
 ```
 
