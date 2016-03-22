@@ -89,6 +89,12 @@ Here's an example on an high level what will be exported from After Effects. The
 }
 ```
 
+## Export Example
+
+You can view an export example at (be forewarned these files are huge):
+
+[https://github.com/Jam3/ae-to-json/blob/master/example/example.json](https://github.com/Jam3/ae-to-json/blob/master/example/example.json)
+
 ## Testing
 
 To run tests there are two scenarios. Run a test just once or watch the `src/`and `test/` folders and run tests. Below are the commands to run tests:
