@@ -1,9 +1,13 @@
 // require('ae-shim');
 
 module.exports = function() {
-  const getCompositions = require('./getCompositions');
+  var getApp = require('./getApp')
+
+  return getApp();
   
-  return {
-    compositions: getCompositions()
-  };
+  // const getCompositions = require('./getCompositions');
+  
+  // return {
+  //   compositions: getCompositions()
+  // };
 };
