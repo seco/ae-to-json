@@ -22,13 +22,13 @@ There are a few ways that you can consume this module. They are deocumented belo
 - Usage in After Effects' Scripting tools
 - Build and use in your own JSX Scripts
 
-## Usage with the `after-effects` module
+### Usage with the `after-effects` module
 
 The [`after-effects`](https://www.npmjs.com/package/after-effects) allows you to run "functions" in After effects. Pass it one function it will return you the value in Node. No need to use the After Effects Scripting tools. To use with [`after-effects`](https://www.npmjs.com/package/after-effects):
 
 Install `after-effects`:
 ```bash
-$ npm i after-effects
+$ npm i ae-to-json after-effects --save
 ```
 
 In Javascript:
@@ -45,6 +45,49 @@ ae.execute(aeToJSON)
 });
 ```
 
+### Usage in After Effects' Scripting tools
+
+Copy the contents of `dist/index.js`. The dist build will bring in es-5 shims and a JSON shim.
+
+In After Effects go to:
+
+- File
+- Scripts
+- Open Script Editor
+- Paste contents into Script Editor
+
+You should now be able to do something like:
+```javascript
+JSON.stringify(aeToJSON(), null, '  ');
+```
+
+### Build and use in your own JSX Scripts
+
+Since After Effects currently uses a Ecma Script 3 engine you will need to shim in Ecma Script 5. Also you should shim in JSON also.
+
+Install:
+```bash
+$ npm i ae-to-json es5-shim JSON2 --save
+```
+
+Javascript:
+```javascript
+// shim in es5 functionality
+require('es5-shim');
+
+// you might want to make JSON be a global
+JSON = require('JSON2');
+
+var aeToJSON = require('ae-to-json');
+
+// do something with the aeToJSON function
+```
+
+After this you'll most likely want to browserify the Javascript file defined above.
+
+```bash
+$ browserify index.js -o bundle.js
+```
 
 
 
