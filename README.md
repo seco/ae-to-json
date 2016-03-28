@@ -18,9 +18,9 @@ Documentation on Adobe's After Effects scripting guide can be found here:
 
 There are a few ways that you can consume this module. They are deocumented below:
 
-- Usage with the `after-effects` module
-- Usage in After Effects' Scripting tools
-- Build and use in your own JSX Scripts
+- [Usage with the `after-effects` module](#usage-with-the-after-effects-module)
+- [Usage in After Effects' Scripting tools](#usage-in-after-effects-scripting-tools)
+- [Build and use in your own JSX Scripts](#build-and-use-in-your-own-jsx-scripts)
 
 ### Usage with the `after-effects` module
 
