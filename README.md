@@ -18,8 +18,9 @@ Documentation on Adobe's After Effects scripting guide can be found here:
 
 There are a few ways that you can consume this module. They are deocumented below:
 
-- Usage with the after-effects module
-- 
+- Usage with the `after-effects` module
+- Usage in After Effects' Scripting tools
+- Build and use in your own JSX Scripts
 
 ## Usage with the `after-effects` module
 
@@ -43,6 +44,8 @@ ae.execute(aeToJSON)
   throw e;
 });
 ```
+
+
 
 
 ## High Level Exported Format
