@@ -1,6 +1,7 @@
 var merge = require('xtend');
 var getNonObjectValues = require('./util/getNonObjectValues');
 var getItems = require('./getItems');
+var convertTypes = require('./convertTypes');
 
 
 module.exports = function getProject() {
@@ -16,6 +17,8 @@ module.exports = function getProject() {
       items: getItems()
     }
   );
+
+  convertTypes(rVal);
 
   return rVal;
 };

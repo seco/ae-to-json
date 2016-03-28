@@ -1,7 +1,7 @@
 var getComposition = require('./getComposition');
 var collectionToArray = require('./util/collectionToArray');
 var getNonObjectValues = require('./util/getNonObjectValues');
-var merge = require('xtend');
+var convertTypes = require('./convertTypes');
 
 module.exports = function getItems() {
   const IGNORE_PROPS = [
@@ -31,6 +31,8 @@ module.exports = function getItems() {
 
       rVal.push(itemJSON);
     });
+
+    convertTypes(rVal);
 
     return rVal;
   };

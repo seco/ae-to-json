@@ -1,25 +1,8 @@
 var merge = require('xtend');
 
 var getKeyframesForProp = require('./getKeyframesForProp');
-var getPropertyType = require('./getPropertyType');
-var getPropertyValueType = require('./getPropertyValueType');
 var getNonObjectValues = require('./util/getNonObjectValues');
-
-const PROPS = [
-  'anchorPoint', 
-  'position',
-  'scale',
-  'opacity',
-  'rotationX',
-  'rotationY',
-  'rotation'
-];
-
-const PROP_RENAMES = {
-  rotation: 'rotationZ'
-};
-
-var isFirst = true;
+var convertTypes = require('./convertTypes');
 
 // this function will export all properties for a layer
 module.exports = function getProperties(layer) {
@@ -44,14 +27,13 @@ module.exports = function getProperties(layer) {
         currentTarget,
         baseValues,
         {
-          keyframes: getKeyframesForProp(property),
-          propertyType: getPropertyType(baseValues.propertyType),
-          propertyValueType: getPropertyValueType(baseValues.propertyValueType)
+          keyframes: getKeyframesForProp(property)
         }
       );
 
       // we want to remove name as it will be the objects variable name
       // delete currentTarget.name;
+      convertTypes(currentTarget);
 
       target[ property.name ] = currentTarget;
 

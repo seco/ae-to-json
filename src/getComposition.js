@@ -2,6 +2,7 @@ var getLayer = require('./getLayer');
 var collectionToArray = require('./util/collectionToArray');
 var getNonObjectValues = require('./util/getNonObjectValues');
 var merge = require('xtend');
+var convertTypes = require('./convertTypes');
 
 module.exports = function getComposition(comp) {
   var rVal = merge(
@@ -22,6 +23,8 @@ module.exports = function getComposition(comp) {
       getLayer(layer, layers)
     );
   });
+
+  convertTypes(rVal);
 
   return rVal;
 };
