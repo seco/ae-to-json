@@ -24,16 +24,19 @@
   },
   "scripts": {
     "start": "npm run watch",
-    "watch": "npm run open-ae; nodemon -w src/ -w test/ -i test/aeToJSON.js -x npm -- run test-build-run",
+    "watch": "npm run open-ae; nodemon -w src/ -w test/ -x npm -- run test-build-run",
     "test": "npm run open-ae; npm run test-build-run;",
     "test-build-run": "npm run test-build; babel-node test/",
-    "test-build": "npm run transpile; npm run test-template; npm run transpile-clean;",
-    "test-template": "npm run test-cat-header; npm run test-browserify; npm run test-cat-footer",
-    "test-cat-header": "cat test/testTemplate/header.js > test/aeToJSON.js",
-    "test-browserify": "browserify index.js -s aeToJSON >> test/aeToJSON.js",
-    "test-cat-footer": "cat test/testTemplate/footer.js >> test/aeToJSON.js",
-    "transpile": "babel -d ./ src/",
-    "transpile-clean": "rm *.js *.jsx; rm -rf util/",
+    "test-build": "npm run compile; npm run clean-root;",
+
+    "compile": "npm run transpile; npm run after-effects;",
+    "transpile": "babel -d ./ src/ --ignore src/template/",
+    "after-effects": "npm run after-effects-header; npm run after-effects-browserify; npm run after-effects-cat-footer",
+    "after-effects-header": "cat src/template/header.js > after-effects.js",
+    "after-effects-browserify": "browserify index.js -s aeToJSON >> after-effects.js",
+    "after-effects-cat-footer": "cat src/template/footer.js >> after-effects.js",
+
+    "clean-root": "ls -l1 *.js | grep -v after-effects.js | xargs rm; rm -rf util/",
     "export-example": "npm run open-ae; npm run test-build; babel-node example/exportExample.js",
     "open-ae": "opn test/ae/testProject.aepx"
   },

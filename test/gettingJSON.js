@@ -1,7 +1,7 @@
 var ae = require('after-effects');
 var fs = require('fs');
 
-var aeToJSON = require('./aeToJSON');
+var aeToJSON = require('../after-effects');
 
 ae.options({
   errorHandling: true,

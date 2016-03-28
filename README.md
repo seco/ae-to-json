@@ -16,6 +16,35 @@ Documentation on Adobe's After Effects scripting guide can be found here:
 
 [![NPM](https://nodei.co/npm/ae-to-json.png)](https://www.npmjs.com/package/ae-to-json)
 
+There are a few ways that you can consume this module. They are deocumented below:
+
+- Usage with the after-effects module
+- 
+
+## Usage with the `after-effects` module
+
+The [`after-effects`](https://www.npmjs.com/package/after-effects) allows you to run "functions" in After effects. Pass it one function it will return you the value in Node. No need to use the After Effects Scripting tools. To use with [`after-effects`](https://www.npmjs.com/package/after-effects):
+
+Install `after-effects`:
+```bash
+$ npm i after-effects
+```
+
+In Javascript:
+```javascript
+var aeToJSON = require('ae-to-json/after-effects');
+var ae = require('after-effects');
+
+ae.execute(aeToJSON)
+.then(function(json) {
+  // do something with the json outout
+})
+.catch(function(e) {
+  throw e;
+});
+```
+
+
 ## High Level Exported Format
 
 Here's an example on an high level what will be exported from After Effects. These files can be very large since we attempt to export everything but at least this small bit of documentation will help you get started traversing the exports:
@@ -100,10 +129,16 @@ You can view an export example at (be forewarned these files are huge):
 To run tests there are two scenarios. Run a test just once or watch the `src/`and `test/` folders and run tests. Below are the commands to run tests:
 
 To run test once:
-`$ npm test`
+```bash
+$ npm test
+```
 
 To watch and run (better for development):
-`$ npm start`
+```bash
+$ npm start
+```
+
+When run unit tests are run on the JSON out along with a `testOutput.json` file is exported to the root director of this repo.
 
 ## License
 
