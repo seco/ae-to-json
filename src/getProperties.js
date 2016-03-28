@@ -62,28 +62,6 @@ module.exports = function getProperties(layer) {
   getProperties(layer, properties);
 
   return properties;
-
-
-
-
-
-  // return PROPS
-  // .reduce(function(properties, property) {
-  //   var propOutName = PROP_RENAMES[ property ] || property;
-  //   var aeProperty = layer.property(property);
-  //   var baseValues = getNonObjectValues(aeProperty);
-
-  //   properties[ propOutName ] = merge(
-  //     baseValues,
-  //     {
-  //       keyframes: getKeyframesForProp(aeProperty),
-  //       propertyType: getPropertyType(baseValues.propertyType),
-  //       propertyValueType: getPropertyValueType(baseValues.propertyValueType)
-  //     }
-  //   );
-
-  //   return properties;
-  // }, {});
 };
 
 function getPropertyGroupArray(layer) {
