@@ -16,7 +16,7 @@ Documentation on Adobe's After Effects scripting guide can be found here:
 
 [![NPM](https://nodei.co/npm/ae-to-json.png)](https://www.npmjs.com/package/ae-to-json)
 
-There are a few ways that you can consume this module. They are deocumented below:
+There are a few ways that you can consume this module. They are documented below:
 
 - [Usage with the `after-effects` module](#usage-with-the-after-effects-module)
 - [Usage in After Effects' Scripting tools](#usage-in-after-effects-scripting-tools)
