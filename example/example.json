@@ -9,7 +9,7 @@
   "isProfessionalVersion": true,
   "isoLanguage": "en_US",
   "language": 1612,
-  "memoryInUse": 407465984,
+  "memoryInUse": 599019520,
   "saveProjectOnCrash": true,
   "version": "13.7x124",
   "project": {
@@ -18,7 +18,7 @@
     "footageTimecodeDisplayStartType": 2012,
     "framesCountType": 2414,
     "numItems": 6,
-    "revision": 1119,
+    "revision": 1172,
     "timeDisplayType": 1812,
     "items": [
       {
@@ -52,7 +52,6 @@
           1,
           1
         ],
-        "selected": true,
         "selectedLayers": [],
         "selectedProperties": [],
         "shutterAngle": 180,
@@ -81,7 +80,7 @@
             "numProperties": 11,
             "outPoint": 96.5632298965632,
             "parentProperty": null,
-            "propertyType": 6013,
+            "propertyType": "NAMED_GROUP",
             "quality": 4414,
             "samplingQuality": 4612,
             "selectedProperties": [],
@@ -137,8 +136,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 3,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Masks": {
                 "active": true,
@@ -148,8 +146,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 4,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Effects": {
                 "active": true,
@@ -159,8 +156,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 5,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Transform": {
                 "Anchor Point": {
@@ -456,8 +452,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 6,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Layer Styles": {
                 "Blending Options": {
@@ -635,8 +630,7 @@
                     "propertyDepth": 3,
                     "propertyIndex": 3,
                     "propertyType": "NAMED_GROUP",
-                    "keyframes": [],
-                    "propertyValueType": "UNKNOWN"
+                    "keyframes": []
                   },
                   "active": true,
                   "enabled": true,
@@ -646,8 +640,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 1,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Drop Shadow": {
                   "Blend Mode": {
@@ -899,8 +892,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 2,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Shadow": {
                   "Blend Mode": {
@@ -1129,8 +1121,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 3,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Outer Glow": {
                   "Blend Mode": {
@@ -1427,8 +1418,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 4,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Glow": {
                   "Blend Mode": {
@@ -1749,8 +1739,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 5,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Bevel and Emboss": {
                   "Style": {
@@ -2133,8 +2122,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 6,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Satin": {
                   "Blend Mode": {
@@ -2319,8 +2307,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 7,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Color Overlay": {
                   "Blend Mode": {
@@ -2414,8 +2401,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 8,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Gradient Overlay": {
                   "Blend Mode": {
@@ -2655,8 +2641,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 9,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Pattern Overlay": {
                   "Blend Mode": {
@@ -2791,8 +2776,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 10,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Stroke": {
                   "Blend Mode": {
@@ -2934,8 +2918,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 11,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "active": true,
                 "enabled": true,
@@ -2945,8 +2928,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 7,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Geometry Options": {
                 "Bevel Style": {
@@ -3070,8 +3052,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 9,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Material Options": {
                 "Casts Shadows": {
@@ -3430,8 +3411,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 10,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Audio": {
                 "Audio Levels": {
@@ -3473,8 +3453,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 11,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               }
             },
             "nullLayer": false
@@ -3502,7 +3481,7 @@
             "outPoint": 96.5632298965632,
             "parent": null,
             "parentProperty": null,
-            "propertyType": 6013,
+            "propertyType": "NAMED_GROUP",
             "quality": 4414,
             "samplingQuality": 4612,
             "selectedProperties": [],
@@ -3557,8 +3536,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 3,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Masks": {
                 "active": true,
@@ -3568,8 +3546,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 4,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Effects": {
                 "active": true,
@@ -3579,8 +3556,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 5,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Transform": {
                 "Anchor Point": {
@@ -3874,8 +3850,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 6,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Layer Styles": {
                 "Blending Options": {
@@ -4053,8 +4028,7 @@
                     "propertyDepth": 3,
                     "propertyIndex": 3,
                     "propertyType": "NAMED_GROUP",
-                    "keyframes": [],
-                    "propertyValueType": "UNKNOWN"
+                    "keyframes": []
                   },
                   "active": true,
                   "enabled": true,
@@ -4064,8 +4038,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 1,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Drop Shadow": {
                   "Blend Mode": {
@@ -4317,8 +4290,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 2,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Shadow": {
                   "Blend Mode": {
@@ -4547,8 +4519,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 3,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Outer Glow": {
                   "Blend Mode": {
@@ -4845,8 +4816,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 4,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Glow": {
                   "Blend Mode": {
@@ -5167,8 +5137,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 5,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Bevel and Emboss": {
                   "Style": {
@@ -5551,8 +5520,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 6,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Satin": {
                   "Blend Mode": {
@@ -5737,8 +5705,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 7,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Color Overlay": {
                   "Blend Mode": {
@@ -5832,8 +5799,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 8,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Gradient Overlay": {
                   "Blend Mode": {
@@ -6073,8 +6039,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 9,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Pattern Overlay": {
                   "Blend Mode": {
@@ -6209,8 +6174,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 10,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Stroke": {
                   "Blend Mode": {
@@ -6352,8 +6316,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 11,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "active": true,
                 "enabled": true,
@@ -6363,8 +6326,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 7,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Geometry Options": {
                 "Bevel Style": {
@@ -6488,8 +6450,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 9,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Material Options": {
                 "Casts Shadows": {
@@ -6848,8 +6809,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 10,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Audio": {
                 "Audio Levels": {
@@ -6891,8 +6851,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 11,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               }
             }
           }
@@ -6968,6 +6927,7 @@
           1,
           1
         ],
+        "selected": true,
         "selectedLayers": [],
         "selectedProperties": [],
         "shutterAngle": 180,
@@ -6997,7 +6957,7 @@
             "outPoint": 96.5632298965632,
             "parent": null,
             "parentProperty": null,
-            "propertyType": 6013,
+            "propertyType": "NAMED_GROUP",
             "quality": 4414,
             "samplingQuality": 4612,
             "selectedProperties": [],
@@ -7053,8 +7013,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 3,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Masks": {
                 "active": true,
@@ -7064,8 +7023,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 4,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Effects": {
                 "active": true,
@@ -7075,8 +7033,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 5,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Transform": {
                 "Anchor Point": {
@@ -7680,8 +7637,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 6,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Layer Styles": {
                 "Blending Options": {
@@ -7859,8 +7815,7 @@
                     "propertyDepth": 3,
                     "propertyIndex": 3,
                     "propertyType": "NAMED_GROUP",
-                    "keyframes": [],
-                    "propertyValueType": "UNKNOWN"
+                    "keyframes": []
                   },
                   "active": true,
                   "enabled": true,
@@ -7870,8 +7825,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 1,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Drop Shadow": {
                   "Blend Mode": {
@@ -8123,8 +8077,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 2,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Shadow": {
                   "Blend Mode": {
@@ -8353,8 +8306,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 3,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Outer Glow": {
                   "Blend Mode": {
@@ -8651,8 +8603,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 4,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Glow": {
                   "Blend Mode": {
@@ -8973,8 +8924,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 5,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Bevel and Emboss": {
                   "Style": {
@@ -9357,8 +9307,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 6,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Satin": {
                   "Blend Mode": {
@@ -9543,8 +9492,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 7,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Color Overlay": {
                   "Blend Mode": {
@@ -9638,8 +9586,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 8,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Gradient Overlay": {
                   "Blend Mode": {
@@ -9879,8 +9826,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 9,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Pattern Overlay": {
                   "Blend Mode": {
@@ -10015,8 +9961,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 10,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Stroke": {
                   "Blend Mode": {
@@ -10158,8 +10103,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 11,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "active": true,
                 "enabled": true,
@@ -10169,8 +10113,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 7,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Geometry Options": {
                 "Bevel Style": {
@@ -10294,8 +10237,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 9,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Material Options": {
                 "Casts Shadows": {
@@ -10654,8 +10596,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 10,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Audio": {
                 "Audio Levels": {
@@ -10697,8 +10638,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 11,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               }
             },
             "nullLayer": false
@@ -10724,7 +10664,7 @@
             "outPoint": 96.5632298965632,
             "parent": null,
             "parentProperty": null,
-            "propertyType": 6013,
+            "propertyType": "NAMED_GROUP",
             "quality": 4414,
             "samplingQuality": 4612,
             "selectedProperties": [],
@@ -10780,8 +10720,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 3,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Masks": {
                 "active": true,
@@ -10791,8 +10730,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 4,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Effects": {
                 "active": true,
@@ -10802,8 +10740,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 5,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Transform": {
                 "Anchor Point": {
@@ -11178,8 +11115,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 6,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Layer Styles": {
                 "Blending Options": {
@@ -11357,8 +11293,7 @@
                     "propertyDepth": 3,
                     "propertyIndex": 3,
                     "propertyType": "NAMED_GROUP",
-                    "keyframes": [],
-                    "propertyValueType": "UNKNOWN"
+                    "keyframes": []
                   },
                   "active": true,
                   "enabled": true,
@@ -11368,8 +11303,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 1,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Drop Shadow": {
                   "Blend Mode": {
@@ -11621,8 +11555,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 2,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Shadow": {
                   "Blend Mode": {
@@ -11851,8 +11784,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 3,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Outer Glow": {
                   "Blend Mode": {
@@ -12149,8 +12081,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 4,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Glow": {
                   "Blend Mode": {
@@ -12471,8 +12402,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 5,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Bevel and Emboss": {
                   "Style": {
@@ -12855,8 +12785,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 6,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Satin": {
                   "Blend Mode": {
@@ -13041,8 +12970,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 7,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Color Overlay": {
                   "Blend Mode": {
@@ -13136,8 +13064,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 8,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Gradient Overlay": {
                   "Blend Mode": {
@@ -13377,8 +13304,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 9,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Pattern Overlay": {
                   "Blend Mode": {
@@ -13513,8 +13439,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 10,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Stroke": {
                   "Blend Mode": {
@@ -13656,8 +13581,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 11,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "active": true,
                 "enabled": true,
@@ -13667,8 +13591,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 7,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Geometry Options": {
                 "Bevel Style": {
@@ -13792,8 +13715,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 9,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Material Options": {
                 "Casts Shadows": {
@@ -14152,8 +14074,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 10,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Audio": {
                 "Audio Levels": {
@@ -14195,8 +14116,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 11,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               }
             },
             "nullLayer": false
@@ -14205,7 +14125,7 @@
             "active": true,
             "audioEnabled": true,
             "autoOrient": 4012,
-            "blendingMode": "NORMAL",
+            "blendingMode": "OVERLAY",
             "canSetEnabled": true,
             "effectsActive": true,
             "enabled": true,
@@ -14222,7 +14142,7 @@
             "outPoint": 96.5632298965632,
             "parent": null,
             "parentProperty": null,
-            "propertyType": 6013,
+            "propertyType": "NAMED_GROUP",
             "quality": 4414,
             "samplingQuality": 4612,
             "selectedProperties": [],
@@ -14278,8 +14198,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 3,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Masks": {
                 "active": true,
@@ -14289,8 +14208,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 4,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Effects": {
                 "active": true,
@@ -14300,8 +14218,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 5,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Transform": {
                 "Anchor Point": {
@@ -14752,8 +14669,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 6,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Layer Styles": {
                 "Blending Options": {
@@ -14931,8 +14847,7 @@
                     "propertyDepth": 3,
                     "propertyIndex": 3,
                     "propertyType": "NAMED_GROUP",
-                    "keyframes": [],
-                    "propertyValueType": "UNKNOWN"
+                    "keyframes": []
                   },
                   "active": true,
                   "enabled": true,
@@ -14942,8 +14857,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 1,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Drop Shadow": {
                   "Blend Mode": {
@@ -15195,8 +15109,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 2,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Shadow": {
                   "Blend Mode": {
@@ -15425,8 +15338,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 3,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Outer Glow": {
                   "Blend Mode": {
@@ -15723,8 +15635,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 4,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Glow": {
                   "Blend Mode": {
@@ -16045,8 +15956,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 5,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Bevel and Emboss": {
                   "Style": {
@@ -16429,8 +16339,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 6,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Satin": {
                   "Blend Mode": {
@@ -16615,8 +16524,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 7,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Color Overlay": {
                   "Blend Mode": {
@@ -16710,8 +16618,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 8,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Gradient Overlay": {
                   "Blend Mode": {
@@ -16951,8 +16858,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 9,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Pattern Overlay": {
                   "Blend Mode": {
@@ -17087,8 +16993,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 10,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Stroke": {
                   "Blend Mode": {
@@ -17230,8 +17135,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 11,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "active": true,
                 "enabled": true,
@@ -17241,8 +17145,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 7,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Geometry Options": {
                 "Bevel Style": {
@@ -17366,8 +17269,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 9,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Material Options": {
                 "Casts Shadows": {
@@ -17726,8 +17628,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 10,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Audio": {
                 "Audio Levels": {
@@ -17769,8 +17670,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 11,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               }
             },
             "nullLayer": false
@@ -17779,7 +17679,7 @@
             "active": true,
             "audioEnabled": true,
             "autoOrient": 4012,
-            "blendingMode": "NORMAL",
+            "blendingMode": "ADD",
             "canSetEnabled": true,
             "effectsActive": true,
             "enabled": true,
@@ -17796,7 +17696,7 @@
             "outPoint": 96.5632298965632,
             "parent": null,
             "parentProperty": null,
-            "propertyType": 6013,
+            "propertyType": "NAMED_GROUP",
             "quality": 4414,
             "samplingQuality": 4612,
             "selectedProperties": [],
@@ -17851,8 +17751,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 3,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Masks": {
                 "active": true,
@@ -17862,8 +17761,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 4,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Effects": {
                 "active": true,
@@ -17873,8 +17771,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 5,
                 "propertyType": "INDEXED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Transform": {
                 "Anchor Point": {
@@ -18170,8 +18067,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 6,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Layer Styles": {
                 "Blending Options": {
@@ -18349,8 +18245,7 @@
                     "propertyDepth": 3,
                     "propertyIndex": 3,
                     "propertyType": "NAMED_GROUP",
-                    "keyframes": [],
-                    "propertyValueType": "UNKNOWN"
+                    "keyframes": []
                   },
                   "active": true,
                   "enabled": true,
@@ -18360,8 +18255,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 1,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Drop Shadow": {
                   "Blend Mode": {
@@ -18613,8 +18507,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 2,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Shadow": {
                   "Blend Mode": {
@@ -18843,8 +18736,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 3,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Outer Glow": {
                   "Blend Mode": {
@@ -19141,8 +19033,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 4,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Inner Glow": {
                   "Blend Mode": {
@@ -19463,8 +19354,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 5,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Bevel and Emboss": {
                   "Style": {
@@ -19847,8 +19737,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 6,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Satin": {
                   "Blend Mode": {
@@ -20033,8 +19922,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 7,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Color Overlay": {
                   "Blend Mode": {
@@ -20128,8 +20016,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 8,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Gradient Overlay": {
                   "Blend Mode": {
@@ -20369,8 +20256,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 9,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Pattern Overlay": {
                   "Blend Mode": {
@@ -20505,8 +20391,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 10,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "Stroke": {
                   "Blend Mode": {
@@ -20648,8 +20533,7 @@
                   "propertyDepth": 2,
                   "propertyIndex": 11,
                   "propertyType": "NAMED_GROUP",
-                  "keyframes": [],
-                  "propertyValueType": "UNKNOWN"
+                  "keyframes": []
                 },
                 "active": true,
                 "enabled": true,
@@ -20659,8 +20543,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 7,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Geometry Options": {
                 "Bevel Style": {
@@ -20784,8 +20667,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 9,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Material Options": {
                 "Casts Shadows": {
@@ -21144,8 +21026,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 10,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               },
               "Audio": {
                 "Audio Levels": {
@@ -21187,8 +21068,7 @@
                 "propertyDepth": 1,
                 "propertyIndex": 11,
                 "propertyType": "NAMED_GROUP",
-                "keyframes": [],
-                "propertyValueType": "UNKNOWN"
+                "keyframes": []
               }
             },
             "nullLayer": false

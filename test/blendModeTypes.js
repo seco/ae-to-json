@@ -1,38 +1,27 @@
-var getValueFromLayers = require('./getValueFromLayers');
+var getValuesFromTree = require('./getValuesFromTree');
+var checkValueForPath = require('./checkValueForPath');
 
 module.exports = function(t) {
-  var values = getValueFromLayers('blendingMode');
+  var json = global.jsonFromAE;
+  var values = getValuesFromTree(global.jsonFromAE, 'blendingMode');
+  var expectedValues = getExpectedValues();
 
   // console.log(JSON.stringify(values, null, '  '));
-  t.deepEqual(values, getExpectedValue(), 'frame blending exports are correct');
 
+  Object.keys(expectedValues).forEach(function(path) {
+    checkValueForPath(t, json, path, expectedValues[ path ]);
+  });
+  
   t.end();
 };
 
-function getExpectedValue() {
+function getExpectedValues() {
   return {
-    "Test-Comp-Static": {
-      "static-logo_0": {
-        "blendingMode": "NORMAL"
-      },
-      "iAmANull_1": {
-        "blendingMode": "NORMAL"
-      }
-    },
-    "Test-Comp-Blank": {},
-    "Test-Comp-Animated": {
-      "animatedLogo 2_0": {
-        "blendingMode": "NORMAL"
-      },
-      "animatedLogo_1": {
-        "blendingMode": "NORMAL"
-      },
-      "animatedLogoBezier_2": {
-        "blendingMode": "OVERLAY"
-      },
-      "staticLogo_3": {
-        "blendingMode": "ADD"
-      }
-    }
+    "project|items|0|layers|0|blendingMode": "NORMAL",
+    "project|items|0|layers|1|blendingMode": "NORMAL",
+    "project|items|2|layers|0|blendingMode": "NORMAL",
+    "project|items|2|layers|1|blendingMode": "NORMAL",
+    "project|items|2|layers|2|blendingMode": "OVERLAY",
+    "project|items|2|layers|3|blendingMode": "ADD"
   };
 }

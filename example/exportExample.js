@@ -8,7 +8,7 @@ var fs = require('fs');
 var path = require('path');
 var afterEffects = require('after-effects');
 
-var aeToJSON = require('../test/aeToJSON');
+var aeToJSON = require('../after-effects');
 
 afterEffects.options({
   errorHandling: true,
