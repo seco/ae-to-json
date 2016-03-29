@@ -9,6 +9,6 @@ demo/
 .npmignore
 LICENSE.md
 /src
-/example/
-/dist/
+/example
+/dist
 testOutPut.json

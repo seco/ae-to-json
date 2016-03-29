@@ -2,12 +2,11 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-The purpose of this module is to have one After Effects JSX (After Effects JS) script to:
+The purpose of this module is to create After Effects JSX/JS Script cript to:
 - Export After Effects files as JSON like Objects
 - Standardize After Effects to JSON Exporters
-- Keep the exporter separate from renderer
 - Create a platform on which renderers can be built on top of
-- Have proper unit tests to catch breaking changes in After Effects (one failure point vs many failure points)
+- Have proper unit tests to catch breaking changes in After Effects
 
 Documentation on Adobe's After Effects scripting guide can be found here:
 - [After Effects Scripting Guide](http://download.macromedia.com/pub/developer/aftereffects/scripting/After-Effects-CS6-Scripting-Guide.pdf) _(appendix of API documentation starts on Page #12)_
@@ -93,7 +92,10 @@ $ browserify index.js -o bundle.js
 
 ## High Level Exported Format
 
-Here's an example on an high level what will be exported from After Effects. These files can be very large since we attempt to export everything but at least this small bit of documentation will help you get started traversing the exports:
+Here's an example on an high level what will be exported from After Effects. For a more detailed example of an export check out:
+[https://raw.githubusercontent.com/Jam3/ae-to-json/master/example/example.json](https://raw.githubusercontent.com/Jam3/ae-to-json/master/example/example.json)
+
+These files can be very large since we attempt to export everything but at least this small bit of documentation will help you get started traversing the exports:
 ```javascript
 { 
   // meta data for the project
@@ -168,7 +170,7 @@ Here's an example on an high level what will be exported from After Effects. The
 
 You can view an export example at (be forewarned these files are huge):
 
-[https://github.com/Jam3/ae-to-json/blob/master/example/example.json](https://github.com/Jam3/ae-to-json/blob/master/example/example.json)
+[https://raw.githubusercontent.com/Jam3/ae-to-json/master/example/example.json](https://raw.githubusercontent.com/Jam3/ae-to-json/master/example/example.json)
 
 ## Testing
 
