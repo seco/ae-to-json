@@ -2,7 +2,10 @@ var varibleToParser = {
   propertyType: require('./getPropertyType'),
   propertyValueType: require('./getPropertyValueType'),
   blendingMode: require('./getBlendingMode'),
-  frameBlendingType: require('./getFrameBlendingType')
+  frameBlendingType: require('./getFrameBlendingType'),
+  alphaMode: require('./getAlphaMode'),
+  fieldSeparationType: require('./getFieldSeparationType'),
+  removePulldown: require('./getRemovePullDownType')
 };
 
 module.exports = function(item) {

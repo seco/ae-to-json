@@ -4,7 +4,7 @@ var getNonObjectValues = require('./util/getNonObjectValues');
 var merge = require('xtend');
 var convertTypes = require('./convertTypes');
 
-module.exports = function getComposition(comp) {
+module.exports = function getComposition(comp, items) {
   var rVal = merge(
     getNonObjectValues(comp),
     {
@@ -20,7 +20,7 @@ module.exports = function getComposition(comp) {
 
     // save out the layer
     outLayers.push(
-      getLayer(layer, layers)
+      getLayer(layer, layers, items)
     );
   });
 

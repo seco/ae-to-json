@@ -9,7 +9,7 @@
   "isProfessionalVersion": true,
   "isoLanguage": "en_US",
   "language": 1612,
-  "memoryInUse": 599019520,
+  "memoryInUse": 2949701632,
   "saveProjectOnCrash": true,
   "version": "13.7x124",
   "project": {
@@ -87,6 +87,7 @@
             "stretch": 100,
             "trackMatteType": 4812,
             "width": 500,
+            "source": "~/Documents/Modules/ae-to-json/test/ae/(Footage)/jam3Logo.png",
             "parent": 1,
             "properties": {
               "Marker": {
@@ -3488,6 +3489,7 @@
             "stretch": 100,
             "trackMatteType": 4812,
             "width": 100,
+            "source": null,
             "properties": {
               "Marker": {
                 "active": true,
@@ -6965,6 +6967,7 @@
             "threeDLayer": true,
             "trackMatteType": 4812,
             "width": 500,
+            "source": "~/Documents/Modules/ae-to-json/test/ae/(Footage)/jam3Logo.png",
             "properties": {
               "Marker": {
                 "active": true,
@@ -10672,6 +10675,7 @@
             "threeDLayer": true,
             "trackMatteType": 4812,
             "width": 500,
+            "source": "~/Documents/Modules/ae-to-json/test/ae/(Footage)/jam3Logo.png",
             "properties": {
               "Marker": {
                 "active": true,
@@ -14150,6 +14154,7 @@
             "threeDLayer": true,
             "trackMatteType": 4812,
             "width": 500,
+            "source": "~/Documents/Modules/ae-to-json/test/ae/(Footage)/jam3Logo.png",
             "properties": {
               "Marker": {
                 "active": true,
@@ -17703,6 +17708,7 @@
             "stretch": 100,
             "trackMatteType": 4812,
             "width": 500,
+            "source": "~/Documents/Modules/ae-to-json/test/ae/(Footage)/jam3Logo.png",
             "properties": {
               "Marker": {
                 "active": true,
@@ -21085,7 +21091,25 @@
         "pixelAspect": 1,
         "proxySource": null,
         "typeName": "Footage",
-        "width": 100
+        "width": 100,
+        "file": null,
+        "mainSource": {
+          "alphaMode": "STRAIGHT",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "fieldSeparationType": "OFF",
+          "isStill": true,
+          "loop": 1,
+          "premulColor": [
+            0,
+            0,
+            0
+          ],
+          "removePulldown": "OFF"
+        }
       },
       {
         "id": 54,
@@ -21104,7 +21128,25 @@
             "pixelAspect": 1,
             "proxySource": null,
             "typeName": "Footage",
-            "width": 100
+            "width": 100,
+            "file": null,
+            "mainSource": {
+              "alphaMode": "STRAIGHT",
+              "color": [
+                1,
+                1,
+                1
+              ],
+              "fieldSeparationType": "OFF",
+              "isStill": true,
+              "loop": 1,
+              "premulColor": [
+                0,
+                0,
+                0
+              ],
+              "removePulldown": "OFF"
+            }
           }
         ]
       },
@@ -21118,7 +21160,22 @@
         "pixelAspect": 1,
         "proxySource": null,
         "typeName": "Footage",
-        "width": 500
+        "width": 500,
+        "file": null,
+        "mainSource": {
+          "alphaMode": "STRAIGHT",
+          "fieldSeparationType": "OFF",
+          "file": "~/Documents/Modules/ae-to-json/test/ae/(Footage)/jam3Logo.png",
+          "hasAlpha": true,
+          "isStill": true,
+          "loop": 1,
+          "premulColor": [
+            0,
+            0,
+            0
+          ],
+          "removePulldown": "OFF"
+        }
       }
     ]
   }

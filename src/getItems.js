@@ -1,4 +1,5 @@
 var getComposition = require('./getComposition');
+var getFootage = require('./getFootage');
 var collectionToArray = require('./util/collectionToArray');
 var getNonObjectValues = require('./util/getNonObjectValues');
 var convertTypes = require('./convertTypes');
@@ -20,6 +21,8 @@ module.exports = function getItems() {
       // we only want to export compositions
       if(item instanceof CompItem) {
         itemJSON = getComposition(item);
+      } else if(item instanceof FootageItem) {
+        itemJSON = getFootage(item);
       } else {
         itemJSON = getNonObjectValues(item, IGNORE_PROPS);
       }

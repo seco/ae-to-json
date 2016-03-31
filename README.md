@@ -10,6 +10,7 @@ The purpose of this module is to create After Effects JSX/JS Script cript to:
 
 Documentation on Adobe's After Effects scripting guide can be found here:
 - [After Effects Scripting Guide](http://download.macromedia.com/pub/developer/aftereffects/scripting/After-Effects-CS6-Scripting-Guide.pdf) _(appendix of API documentation starts on Page #12)_
+- [Javascript Tools Guide](https://www.adobe.com/content/dam/Adobe/en/devnet/scripting/pdfs/javascript_tools_guide.pdf)
 
 ## Usage
 
