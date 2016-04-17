@@ -27,35 +27,37 @@ module.exports = function(t) {
     var layers = comp.layers;
     var names = [];
 
-    t.equal(
-      comp.layers.length, 
-      EXPECTED_NAMES[ comp.name ].length, 
-      comp.name + ' had ' + EXPECTED_NAMES[ comp.name ].length + ' layers'
-    );
+    if(EXPECTED_NAMES[ comp.name ]) {
+      t.equal(
+        comp.layers.length, 
+        EXPECTED_NAMES[ comp.name ].length, 
+        comp.name + ' had ' + EXPECTED_NAMES[ comp.name ].length + ' layers'
+      );
 
-    // if we have layers we want to make sure all layers
-    // have all expected props
-    layers.forEach(function(layer, i) {
+      // if we have layers we want to make sure all layers
+      // have all expected props
+      layers.forEach(function(layer, i) {
 
-      t.ok(layer.name, 'composition ' + comp.name + ' layer ' + i + ' has a name');
-      t.ok(layer.properties, 'composition ' + comp.name + ' layer ' + layer.name + ' has properties');
-      t.ok(layer.nullLayer !== undefined, 'composition ' + comp.name + ' layer ' + layer.name + ' has nullLayer');
+        t.ok(layer.name, 'composition ' + comp.name + ' layer ' + i + ' has a name');
+        t.ok(layer.properties, 'composition ' + comp.name + ' layer ' + layer.name + ' has properties');
+        t.ok(layer.nullLayer !== undefined, 'composition ' + comp.name + ' layer ' + layer.name + ' has nullLayer');
 
-      // run tests for specific layers
-      if(TESTS_FOR_LAYER[ layer.name ]) {
-        TESTS_FOR_LAYER[ layer.name ](t, comp, layer);
+        // run tests for specific layers
+        if(TESTS_FOR_LAYER[ layer.name ]) {
+          TESTS_FOR_LAYER[ layer.name ](t, comp, layer);
 
-      // run test for every other layer
-      } else {
+        // run test for every other layer
+        } else {
 
-        t.equal(layer.nullLayer, false, 'nullLayer value was correct for ' + comp.name + ' layer ' + layer.name);
-        t.equal(layer.parent, null, 'parent was set to null for ' + comp.name + ' layer ' + layer.name);
-      }
+          t.equal(layer.nullLayer, false, 'nullLayer value was correct for ' + comp.name + ' layer ' + layer.name);
+          t.equal(layer.parent, null, 'parent was set to null for ' + comp.name + ' layer ' + layer.name);
+        }
 
-      names.push(layer.name);
-    });
+        names.push(layer.name);
+      });
 
-    t.deepEqual(names, EXPECTED_NAMES[ comp.name ], comp.name + ' received expected names');
+      t.deepEqual(names, EXPECTED_NAMES[ comp.name ], comp.name + ' received expected names');
+    }
   });
 
   t.end();

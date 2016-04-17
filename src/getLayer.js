@@ -17,12 +17,16 @@ module.exports = function getLayer(layer, parentLayers, items) {
   rVal = merge(
     baseValues,
     {
-      source: layer.source.file && layer.source.file.toString(),
       parent: parent,
       properties: getProperties(layer),
       nullLayer: Boolean(baseValues.nullLayer) // this is here to normalize cause sometimes it might be undefined or false
     }
   );
+
+  // light layers and cameras etc wont have a source
+  if(layer.source) {
+    rVal.source = layer.source.file && layer.source.file.toString();
+  }
 
   convertTypes(rVal);
 

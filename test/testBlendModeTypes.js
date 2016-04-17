@@ -17,11 +17,11 @@ module.exports = function(t) {
 
 function getExpectedValues() {
   return {
-    "project|items|0|layers|0|blendingMode": "NORMAL",
-    "project|items|0|layers|1|blendingMode": "NORMAL",
-    "project|items|2|layers|0|blendingMode": "NORMAL",
-    "project|items|2|layers|1|blendingMode": "NORMAL",
-    "project|items|2|layers|2|blendingMode": "OVERLAY",
-    "project|items|2|layers|3|blendingMode": "ADD"
+    "project|items|1|layers|0|blendingMode": "NORMAL",
+    "project|items|1|layers|1|blendingMode": "NORMAL",
+    "project|items|3|layers|0|blendingMode": "NORMAL",
+    "project|items|3|layers|1|blendingMode": "NORMAL",
+    "project|items|3|layers|2|blendingMode": "OVERLAY",
+    "project|items|3|layers|3|blendingMode": "ADD"
   };
 }

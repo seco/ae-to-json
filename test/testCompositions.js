@@ -5,7 +5,7 @@ module.exports = function(t) {
   });
 
   t.ok(compositions, 'we have compositions');
-  t.deepEqual(compositions.map(getCompNames), [ 'Test-Comp-Static', 'Test-Comp-Blank', 'Test-Comp-Animated' ], 'Received compositions');
+  t.deepEqual(compositions.map(getCompNames), [ 'Test-DifferentFootage', 'Test-Comp-Static', 'Test-Comp-Blank', 'Test-Comp-Animated' ], 'Received compositions');
 
   compositions
   .forEach(function(composition) {
