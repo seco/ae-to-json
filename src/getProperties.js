@@ -14,28 +14,41 @@ module.exports = function getProperties(layer) {
   var getProperties = function(layer, target) {
     getPropertyGroupArray(layer)
     .reduce(function(target, property) {
-      var currentTarget =  {};
-      var baseValues = getNonObjectValues(property);
+      try {
+        var currentTarget =  {};
+        var baseValues;
 
-      // now we want to check if this property is actually a 
-      // property group
-      if(property instanceof PropertyGroup) {
-        getProperties(property, currentTarget);
-      }
+        if(property.propertyValueType !== PropertyValueType.CUSTOM_VALUE) {
+          baseValues = getNonObjectValues(property);
 
-      currentTarget = merge(
-        currentTarget,
-        baseValues,
-        {
-          keyframes: getKeyframesForProp(property)
+          // now we want to check if this property is actually a 
+          // property group
+          if(property instanceof PropertyGroup) {
+            getProperties(property, currentTarget);
+          }
+
+          currentTarget = merge(
+            currentTarget,
+            baseValues,
+            {
+              keyframes: getKeyframesForProp(property)
+            }
+          );
+        } else {
+          currentTarget.propertyValueType = PropertyValueType.CUSTOM_VALUE;
         }
-      );
 
-      // we want to remove name as it will be the objects variable name
-      // delete currentTarget.name;
-      convertTypes(currentTarget);
+        // we want to remove name as it will be the objects variable name
+        // delete currentTarget.name;
+        convertTypes(currentTarget);
 
-      target[ property.name ] = currentTarget;
+        target[ property.name ] = currentTarget;
+      } catch(e) {
+        target[ property.name ] = {
+          exportError: true,
+          message: e.message
+        };
+      }
 
       return target;
     }, target);
