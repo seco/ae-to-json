@@ -47,7 +47,7 @@
     "after-effects-cat-footer": "cat src/template/footer.js >> after-effects.js",
     "compile-dist": "npm run transpile; cp src/dist.js dist.js; browserify dist.js -o dist/index.js; npm run clean-root",
     "clean-root": "rm *.js; rm -rf util/",
-    "export-example": "npm run open-ae; npm run test-build; babel-node example/exportExample.js",
+    "export-example": "npm run open-ae; npm run test-build; node example/exportExample.js",
     "open-ae": "opn test/ae/testProject.aepx"
   },
   "keywords": [
