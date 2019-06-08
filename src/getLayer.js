@@ -30,6 +30,5 @@ module.exports = function getLayer(layer, parentLayers, items) {
 
   convertTypes(rVal);
 
-  //return rVal;
   return rVal;
 };
